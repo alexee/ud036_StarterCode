@@ -10,7 +10,7 @@
 
 class Movie:
     """ The Movie class represents single movie on our website """
-    def __init__(self, title, poster_image_url, trailer_youtube_url):
+    def __init__(self, title, imdbData, trailer_youtube_url):
         """
         Creates an instance of Movie class with specified title,
         poster url and YouTube trailer url.
@@ -20,5 +20,5 @@ class Movie:
         :param trailer_youtube_url: URL to movie trailer on YouTube
         """
         self.title = title
-        self.poster_image_url = poster_image_url
+        self.poster_image_url = imdbData['Poster']
         self.trailer_youtube_url = trailer_youtube_url
