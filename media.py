@@ -16,7 +16,7 @@ class Movie:
         poster url and YouTube trailer url.
 
         :param title: the title of the Movie
-        :param poster_image_url: poster image URL
+        :param imdbData: JSON object from OMDB API containing data for this movie
         :param trailer_youtube_url: URL to movie trailer on YouTube
         """
         self.title = title
